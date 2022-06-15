@@ -1,0 +1,165 @@
+._ {
+    width: 488px; /* 488x1056 width aspect ratio is 0.46124763705 */
+    height: 1056px; /* 1056x1056 height aspect ratio is 2.16803278689 */
+    background: #000;
+    display: flex;
+    border-radius: 60px;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+._ > h1 {
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    transform: scaleY(0.8);
+    font-weight: 901;
+    letter-spacing: 2px;
+    margin-top: 60px;
+}
+
+.content {
+    width: 100%;
+    height: calc(100% - 130px);
+    margin-top: 20px;
+    position: relative;
+    background: radial-gradient(
+        106.67% 109.72% 
+            at 3.17% -9.72%, 
+        #2AD0CA 0%, 
+        #E1F664 22.92%, 
+        #FEB0FE 46.88%,
+        #ABB3FC 68.23%, 
+        #5DF7A4 87.5%, 
+        #58C4F6 100%
+    );
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.trace {
+    margin-top: 20px;
+    width: 50px;
+    height: 5px;
+    border-radius: 6px;
+    background: #505050;
+    display: flex;
+}
+
+.currency {
+    font-family: 'Roboto', sans-serif;
+    color: #404040;
+    font-size: 20px;
+    margin-top: 70px;
+}
+
+.value {
+    font-size: 50px;
+    margin-top: 80px;
+}
+
+.keyPad {
+    margin-top: 100px;
+    width: calc(100% - 160px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.keyPadRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.keyPadRow > button {
+    width: 80px;
+    font-size: 30px;
+    transition: 200ms;
+    font-family: 'Roboto', sans-serif;
+    background: transparent;
+    border: none;
+    color: #000;
+    height: 60px;
+    border-radius: 3px;
+    z-index: 2;
+}
+
+.keyPadRow > button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transition: 0ms;
+}
+
+.contentNoise {
+    width: 100%;
+    height: 100%;
+    background: url("/noise.png");
+    opacity: 0.1;
+    border-radius: 60px;
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.user {
+    margin-top: 60px;
+    background: #000;
+    z-index: 2;
+    height: 100px;
+    width: calc(100% - 80px);
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 30px;
+    gap: 10px;
+}
+
+.userAvatar {
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+.userText {
+    display: flex;
+    flex-direction: column;
+}
+
+.userText > span:nth-child(1) {
+    color: #999;
+    font-family: consolas, monospace;
+}
+
+.userText > span:nth-child(2) {
+    color: #fff;
+    font-family: consolas, monospace;
+    font-size: 20px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.user > button {
+    margin-left: auto;
+    border: none;
+    color: #fff;
+    background: #000;
+    font-size: 20px;
+    transition: 100ms;
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    margin-right: -20px;
+}
+
+.user > button:hover {
+    background: #fff;
+    color: #000;
+    transition: 100ms;
+}
